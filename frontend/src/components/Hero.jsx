@@ -91,18 +91,18 @@ const Hero = () => {
 
           {/* Right content - Service cards */}
           <div className="relative">
-            <div className="relative grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div className="relative grid grid-cols-2 md:grid-cols-2 gap-3">
               {/* Main large card */}
-              <div className="md:col-span-2 bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
+              <div className="col-span-2 bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
                 <div className="flex items-start justify-between">
                   <div>
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-3 group-hover:scale-105 transition-transform duration-300">
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-2 group-hover:scale-105 transition-transform duration-300">
                       <span className="text-white text-lg font-mono font-bold">&lt;/&gt;</span>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-900 mb-1">Website Development</h3>
-                    <p className="text-sm text-gray-600">Custom websites & web apps</p>
+                    <h3 className="text-base font-bold text-gray-900 mb-0.5">Website Development</h3>
+                    <p className="text-xs text-gray-600">Custom websites & web apps</p>
                   </div>
-                  <span className="text-blue-600/20 text-5xl font-mono">01</span>
+                  <span className="text-blue-600/20 text-4xl font-mono">01</span>
                 </div>
               </div>
 
@@ -128,7 +128,7 @@ const Hero = () => {
               </div>
 
               {/* Stats card */}
-              <div className="md:col-span-2 bg-gradient-to-r from-blue-600 to-indigo-600 p-5 rounded-2xl shadow-xl">
+              <div className="col-span-2 bg-gradient-to-r from-blue-600 to-indigo-600 p-4 rounded-2xl shadow-xl">
                 <div className="flex justify-around text-white">
                   <div className="text-center">
                     <div className="text-2xl font-bold">100+</div>
