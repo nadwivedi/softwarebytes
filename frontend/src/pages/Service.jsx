@@ -71,17 +71,6 @@ const services = [
   },
 ];
 
-const techStack = [
-  { name: 'React', color: 'bg-cyan-500' },
-  { name: 'Node.js', color: 'bg-green-500' },
-  { name: 'Python', color: 'bg-yellow-500' },
-  { name: 'Java', color: 'bg-orange-500' },
-  { name: 'AWS', color: 'bg-orange-400' },
-  { name: 'Docker', color: 'bg-blue-400' },
-  { name: 'MongoDB', color: 'bg-green-600' },
-  { name: 'PostgreSQL', color: 'bg-blue-600' },
-];
-
 const Services = () => {
   return (
     <div className="min-h-screen bg-gray-50 pt-20">
@@ -154,36 +143,6 @@ const Services = () => {
                     <span className="font-mono">&lt;/&gt;</span>
                   </Link>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Tech Stack Section */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-700 text-sm font-medium mb-4">
-              <span className="font-mono">&lt;/&gt;</span>
-              Technologies
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Technology Stack
-            </h2>
-            <p className="text-lg text-gray-600">
-              We use the latest technologies to deliver cutting-edge solutions
-            </p>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-4">
-            {techStack.map((tech, index) => (
-              <div
-                key={index}
-                className="group flex items-center gap-3 px-6 py-4 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
-              >
-                <div className={`w-3 h-3 ${tech.color} rounded-full group-hover:scale-150 transition-transform duration-300`}></div>
-                <span className="font-semibold text-gray-700">{tech.name}</span>
               </div>
             ))}
           </div>
