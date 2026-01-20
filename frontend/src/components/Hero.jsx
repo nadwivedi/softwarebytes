@@ -20,25 +20,9 @@ const Hero = () => {
           {/* Left content */}
           <div className="space-y-4 lg:space-y-6">
 
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-[1.1]">
-              Transforming Ideas Into{' '}
-              <span className="relative">
-                <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                  Digital Reality
-                </span>
-                <svg className="absolute -bottom-1 left-0 w-full" viewBox="0 0 300 8" fill="none">
-                  <path d="M2 6C50 2 100 1 150 4C200 6 250 2 298 5" stroke="url(#gradient)" strokeWidth="2.5" strokeLinecap="round"/>
-                  <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#2563eb"/>
-                      <stop offset="100%" stopColor="#7c3aed"/>
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </span>
-            </h1>
+<h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight text-center md:text-left">Transforming Ideas<br className="md:hidden" /> Into <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Digital Reality</span></h1>
 
-            <p className="text-sm md:text-lg text-gray-600 max-w-xl leading-relaxed line-clamp-3">
+            <p className="text-sm md:text-lg text-gray-600 max-w-xl leading-relaxed line-clamp-3 text-center md:text-left mx-auto md:mx-0">
               Leading software company in Raipur, Chhattisgarh delivering innovative
               solutions for businesses worldwide.
             </p>
@@ -88,7 +72,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="flex flex-row gap-3">
+            <div className="flex flex-row gap-3 justify-center md:justify-start">
               <Link
                 to="/services"
                 className="group inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-blue-500/25 hover:-translate-y-0.5 transition-all duration-300 text-sm"
@@ -108,7 +92,7 @@ const Hero = () => {
             </div>
 
             {/* Trust indicators */}
-            <div className="flex items-center gap-6 pt-2">
+            <div className="flex items-center gap-6 pt-2 justify-center md:justify-start">
               <div className="flex items-center gap-2">
                 <div className="flex -space-x-2">
                   {[...Array(4)].map((_, i) => (
