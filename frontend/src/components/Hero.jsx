@@ -132,65 +132,65 @@ const Hero = () => {
 
           {/* Right content - Service cards - Desktop only */}
           <div className="hidden lg:block">
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 gap-4">
               {/* Main large card */}
-              <div className="col-span-2 bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
-                    <span className="text-white text-lg font-mono font-bold">&lt;/&gt;</span>
+              <div className="col-span-2 bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
+                <div className="flex items-center gap-4">
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                    <span className="text-2xl font-mono font-bold text-white">&lt;/&gt;</span>
                   </div>
                   <div>
-                    <h3 className="text-base font-bold text-gray-900">Website Development</h3>
-                    <p className="text-xs text-gray-600">Custom websites & web apps</p>
+                    <h3 className="text-xl font-bold text-gray-900">Website Development</h3>
+                    <p className="text-sm text-gray-600">Custom websites & web apps</p>
                   </div>
                 </div>
               </div>
 
               {/* Smaller cards */}
-              <div className="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 text-xs">Mobile Apps</h3>
-                    <p className="text-[10px] text-gray-600">iOS & Android</p>
+                    <h3 className="font-bold text-gray-900 text-sm">Mobile Apps</h3>
+                    <p className="text-xs text-gray-600">iOS & Android</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 text-xs">ERP Solutions</h3>
-                    <p className="text-[10px] text-gray-600">Enterprise Ready</p>
+                    <h3 className="font-bold text-gray-900 text-sm">ERP Solutions</h3>
+                    <p className="text-xs text-gray-600">Enterprise Ready</p>
                   </div>
                 </div>
               </div>
 
               {/* Stats card */}
-              <div className="col-span-2 bg-gradient-to-r from-blue-600 to-indigo-600 p-4 rounded-2xl shadow-xl">
+              <div className="col-span-2 bg-gradient-to-r from-blue-600 to-indigo-600 p-5 rounded-2xl shadow-xl">
                 <div className="flex justify-around text-white">
                   <div className="text-center">
-                    <div className="text-xl font-bold">100+</div>
-                    <div className="text-blue-100 text-[10px]">Projects</div>
+                    <div className="text-2xl font-bold">100+</div>
+                    <div className="text-blue-100 text-xs">Projects</div>
                   </div>
                   <div className="w-px bg-white/20"></div>
                   <div className="text-center">
-                    <div className="text-xl font-bold">3+</div>
-                    <div className="text-blue-100 text-[10px]">Years</div>
+                    <div className="text-2xl font-bold">3+</div>
+                    <div className="text-blue-100 text-xs">Years</div>
                   </div>
                   <div className="w-px bg-white/20"></div>
                   <div className="text-center">
-                    <div className="text-xl font-bold">24/7</div>
-                    <div className="text-blue-100 text-[10px]">Support</div>
+                    <div className="text-2xl font-bold">24/7</div>
+                    <div className="text-blue-100 text-xs">Support</div>
                   </div>
                 </div>
               </div>
