@@ -19,10 +19,6 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left content */}
           <div className="space-y-4 lg:space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-100/80 backdrop-blur-sm rounded-full text-blue-700 text-xs font-medium">
-              <span className="w-1.5 h-1.5 bg-blue-600 rounded-full animate-pulse"></span>
-              Trusted by 200+ businesses in Raipur
-            </div>
 
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-[1.1]">
               Transforming Ideas Into{' '}
@@ -50,37 +46,44 @@ const Hero = () => {
             {/* Service cards - Mobile only - between description and buttons */}
             <div className="lg:hidden space-y-3">
               <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                <div className="flex items-start justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                    <span className="text-white text-lg font-mono font-bold">&lt;/&gt;</span>
+                  </div>
                   <div>
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-2 group-hover:scale-105 transition-transform duration-300">
-                      <span className="text-white text-lg font-mono font-bold">&lt;/&gt;</span>
-                    </div>
-                    <h3 className="font-bold text-gray-900 mb-0.5">Website Development</h3>
+                    <h3 className="font-bold text-gray-900">Website Development</h3>
                     <p className="text-xs text-gray-600">Custom websites & web apps</p>
                   </div>
-                  <span className="text-blue-600/20 text-4xl font-mono">01</span>
                 </div>
               </div>
 
               <div className="grid grid-cols-2 gap-3">
                 <div className="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center mb-2 group-hover:scale-105 transition-transform duration-300">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                    </svg>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-gray-900 text-xs">Mobile Apps</h3>
+                      <p className="text-[10px] text-gray-600">iOS & Android</p>
+                    </div>
                   </div>
-                  <h3 className="font-bold text-gray-900 text-xs">Mobile Apps</h3>
-                  <p className="text-[10px] text-gray-600">iOS & Android</p>
                 </div>
 
                 <div className="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg flex items-center justify-center mb-2 group-hover:scale-105 transition-transform duration-300">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-gray-900 text-xs">ERP Solutions</h3>
+                      <p className="text-[10px] text-gray-600">Enterprise Ready</p>
+                    </div>
                   </div>
-                  <h3 className="font-bold text-gray-900 text-xs">ERP Solutions</h3>
-                  <p className="text-[10px] text-gray-600">Enterprise Ready</p>
                 </div>
               </div>
             </div>
@@ -132,37 +135,44 @@ const Hero = () => {
             <div className="grid grid-cols-2 gap-3">
               {/* Main large card */}
               <div className="col-span-2 bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                <div className="flex items-start justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                    <span className="text-white text-lg font-mono font-bold">&lt;/&gt;</span>
+                  </div>
                   <div>
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-2 group-hover:scale-105 transition-transform duration-300">
-                      <span className="text-white text-lg font-mono font-bold">&lt;/&gt;</span>
-                    </div>
-                    <h3 className="text-base font-bold text-gray-900 mb-0.5">Website Development</h3>
+                    <h3 className="text-base font-bold text-gray-900">Website Development</h3>
                     <p className="text-xs text-gray-600">Custom websites & web apps</p>
                   </div>
-                  <span className="text-blue-600/20 text-4xl font-mono">01</span>
                 </div>
               </div>
 
               {/* Smaller cards */}
               <div className="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center mb-2 group-hover:scale-105 transition-transform duration-300">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-xs">Mobile Apps</h3>
+                    <p className="text-[10px] text-gray-600">iOS & Android</p>
+                  </div>
                 </div>
-                <h3 className="font-bold text-gray-900 text-xs">Mobile Apps</h3>
-                <p className="text-[10px] text-gray-600">iOS & Android</p>
               </div>
 
               <div className="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg flex items-center justify-center mb-2 group-hover:scale-105 transition-transform duration-300">
-                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                  </svg>
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 text-xs">ERP Solutions</h3>
+                    <p className="text-[10px] text-gray-600">Enterprise Ready</p>
+                  </div>
                 </div>
-                <h3 className="font-bold text-gray-900 text-xs">ERP Solutions</h3>
-                <p className="text-[10px] text-gray-600">Enterprise Ready</p>
               </div>
 
               {/* Stats card */}
