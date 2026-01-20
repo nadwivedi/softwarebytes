@@ -20,7 +20,7 @@ const Hero = () => {
           {/* Left content */}
           <div className="space-y-4 lg:space-y-6">
 
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-[1.1]">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-[1.1]">
               Transforming Ideas Into{' '}
               <span className="relative">
                 <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -38,7 +38,7 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="text-base md:text-lg text-gray-600 max-w-xl leading-relaxed">
+            <p className="text-sm md:text-lg text-gray-600 max-w-xl leading-relaxed line-clamp-3">
               Leading software company in Raipur, Chhattisgarh delivering innovative
               solutions for businesses worldwide.
             </p>
@@ -88,19 +88,19 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-row gap-3">
               <Link
                 to="/services"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-blue-500/25 hover:-translate-y-0.5 transition-all duration-300"
+                className="group inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-blue-500/25 hover:-translate-y-0.5 transition-all duration-300 text-sm"
               >
                 Explore Services
                 <span className="group-hover:translate-x-1 transition-transform duration-300">&lt;/&gt;</span>
               </Link>
               <Link
                 to="/contact"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-gray-700 font-semibold rounded-xl border-2 border-gray-200 hover:border-blue-300 hover:text-blue-600 hover:shadow-lg transition-all duration-300"
+                className="group inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-white text-gray-700 font-semibold rounded-xl border-2 border-gray-200 hover:border-blue-300 hover:text-blue-600 hover:shadow-lg transition-all duration-300 text-sm"
               >
-                Get In Touch
+                Contact Us
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
