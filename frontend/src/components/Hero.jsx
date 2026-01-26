@@ -2,193 +2,224 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[70vh] bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50 pt-16 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-white via-blue-50/40 to-indigo-50/50 pt-20 overflow-hidden">
       {/* Background decorations */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 -left-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-20 -right-20 w-72 h-72 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 -left-20 w-80 h-80 bg-gradient-to-br from-indigo-400/15 to-purple-400/15 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-10 right-1/3 w-60 h-60 bg-gradient-to-br from-violet-400/10 to-pink-400/10 rounded-full blur-3xl"></div>
 
-        {/* Floating code symbols */}
-        <div className="absolute top-32 left-[10%] text-blue-200/40 text-6xl font-mono animate-pulse">&lt;</div>
-        <div className="absolute top-48 right-[15%] text-indigo-200/40 text-4xl font-mono animate-pulse delay-300">/&gt;</div>
-        <div className="absolute bottom-40 left-[20%] text-purple-200/40 text-5xl font-mono animate-pulse delay-500">&lt;/&gt;</div>
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.03)_1px,transparent_1px)] bg-[size:32px_32px]" />
+
+        {/* Floating elements */}
+        <div className="absolute top-28 left-[12%] w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+        <div className="absolute top-40 right-[18%] w-3 h-3 bg-indigo-400 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute bottom-32 left-[25%] w-2 h-2 bg-purple-400 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-6">
+        <div className="grid lg:grid-cols-5 gap-4 lg:gap-8 items-center">
           {/* Left content */}
-          <div className="space-y-4 lg:space-y-6">
+          <div className="lg:col-span-2 space-y-3 lg:space-y-4 text-center lg:text-left">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight">
+              Transforming Ideas Into <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 bg-clip-text text-transparent">Digital Reality</span>
+            </h1>
 
-<h1 className="text-2xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight text-center md:text-left">Transforming Ideas<br className="md:hidden" /> Into <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Digital Reality</span></h1>
-
-            <p className="text-sm md:text-lg text-gray-600 max-w-xl leading-relaxed line-clamp-3 text-center md:text-left mx-auto md:mx-0">
-              Leading software company in Raipur, Chhattisgarh delivering innovative
-              solutions for businesses worldwide.
+            <p className="text-sm md:text-base text-gray-500 max-w-md mx-auto lg:mx-0">
+              ERP Solutions • Web & Mobile Development • API Integration • Digital Marketing
             </p>
 
-            {/* Service cards - Mobile only - between description and buttons */}
-            <div className="lg:hidden space-y-3">
-              <div className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
-                    <span className="text-white text-lg font-mono font-bold">&lt;/&gt;</span>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900">Website Development</h3>
-                    <p className="text-xs text-gray-600">Custom websites & web apps</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 gap-3">
-                <div className="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                  <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
-                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-gray-900 text-xs">Mobile Apps</h3>
-                      <p className="text-[10px] text-gray-600">iOS & Android</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-white/80 backdrop-blur-sm p-3.5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                  <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
-                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-gray-900 text-xs">ERP Solutions</h3>
-                      <p className="text-[10px] text-gray-600">Enterprise Ready</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-row gap-3 justify-center md:justify-start">
+            {/* CTA Buttons */}
+            <div className="flex flex-row gap-2 lg:gap-3 justify-center lg:justify-start">
               <Link
                 to="/services"
-                className="group inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-xl hover:shadow-blue-500/25 hover:-translate-y-0.5 transition-all duration-300 text-sm"
+                className="group inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-semibold rounded-lg shadow-lg shadow-blue-500/20 hover:shadow-xl hover:shadow-blue-500/30 hover:-translate-y-0.5 transition-all duration-300"
               >
-                Explore Services
-                <span className="group-hover:translate-x-1 transition-transform duration-300">&lt;/&gt;</span>
+                Our Services
+                <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
               </Link>
               <Link
                 to="/contact"
-                className="group inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-white text-gray-700 font-semibold rounded-xl border-2 border-gray-200 hover:border-blue-300 hover:text-blue-600 hover:shadow-lg transition-all duration-300 text-sm"
+                className="group inline-flex items-center gap-2 px-5 py-2.5 bg-white text-gray-700 text-sm font-semibold rounded-lg border border-gray-200 shadow-sm hover:border-blue-300 hover:text-blue-600 hover:shadow-md transition-all duration-300"
               >
-                Contact Us
-                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
+                Free Quote
+                <span className="text-blue-500 font-mono text-xs">&lt;/&gt;</span>
               </Link>
             </div>
 
-            {/* Trust indicators */}
-            <div className="flex items-center gap-6 pt-2 justify-center md:justify-start">
-              <div className="flex items-center gap-2">
-                <div className="flex -space-x-2">
-                  {[...Array(4)].map((_, i) => (
-                    <div key={i} className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-indigo-500 border-2 border-white flex items-center justify-center text-white text-xs font-bold">
-                      {String.fromCharCode(65 + i)}
-                    </div>
-                  ))}
+            {/* Stats row */}
+            <div className="flex items-center justify-center lg:justify-start">
+              <div className="flex items-center gap-3 lg:gap-4">
+                <div className="text-center">
+                  <div className="text-lg lg:text-xl font-bold text-gray-900">500+</div>
+                  <div className="text-[10px] lg:text-xs text-gray-500">Projects</div>
                 </div>
-                <span className="text-xs text-gray-500">200+ Happy Clients</span>
-              </div>
-              <div className="hidden sm:flex items-center gap-1 text-yellow-500">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-                  </svg>
-                ))}
-                <span className="text-xs text-gray-500 ml-1">4.9/5</span>
+                <div className="h-6 lg:h-8 w-px bg-gray-200"></div>
+                <div className="text-center">
+                  <div className="text-lg lg:text-xl font-bold text-gray-900">200+</div>
+                  <div className="text-[10px] lg:text-xs text-gray-500">Clients</div>
+                </div>
+                <div className="h-6 lg:h-8 w-px bg-gray-200"></div>
+                <div className="text-center">
+                  <div className="text-lg lg:text-xl font-bold text-gray-900">15+</div>
+                  <div className="text-[10px] lg:text-xs text-gray-500">Years</div>
+                </div>
+                <div className="h-6 lg:h-8 w-px bg-gray-200 hidden sm:block"></div>
+                <div className="hidden sm:flex items-center gap-1">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-3 lg:w-3.5 h-3 lg:h-3.5 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <span className="text-xs text-gray-500 ml-1">4.9</span>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Right content - Service cards - Desktop only */}
-          <div className="hidden lg:block">
-            <div className="grid grid-cols-2 gap-4">
-              {/* Main large card */}
-              <div className="col-span-2 bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
-                <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
-                    <span className="text-2xl font-mono font-bold text-white">&lt;/&gt;</span>
+          {/* Right content - Service cards grid */}
+          <div className="hidden lg:block lg:col-span-3">
+            <div className="grid grid-cols-3 gap-3">
+              {/* Web Development */}
+              <div className="group bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-blue-100 hover:-translate-y-0.5 transition-all duration-300">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
+                    <span className="text-white font-mono text-sm font-bold">&lt;/&gt;</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">Website Development</h3>
-                    <p className="text-sm text-gray-600">Custom websites & web apps</p>
+                    <h3 className="font-semibold text-gray-900 text-sm">Web Development</h3>
+                    <p className="text-xs text-gray-500">Full Stack Solutions</p>
                   </div>
                 </div>
               </div>
 
-              {/* Smaller cards */}
-              <div className="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
+              {/* Mobile Apps */}
+              <div className="group bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-green-100 hover:-translate-y-0.5 transition-all duration-300">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-green-600 rounded-lg flex items-center justify-center shadow-md shadow-green-500/20 group-hover:scale-105 transition-transform">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 text-sm">Mobile Apps</h3>
-                    <p className="text-xs text-gray-600">iOS & Android</p>
+                    <h3 className="font-semibold text-gray-900 text-sm">Mobile Apps</h3>
+                    <p className="text-xs text-gray-500">iOS & Android</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm p-5 rounded-2xl shadow-xl border border-white/50 hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300 group">
+              {/* ERP Solutions */}
+              <div className="group bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-purple-100 hover:-translate-y-0.5 transition-all duration-300">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg flex items-center justify-center shadow-md shadow-purple-500/20 group-hover:scale-105 transition-transform">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 text-sm">ERP Solutions</h3>
-                    <p className="text-xs text-gray-600">Enterprise Ready</p>
+                    <h3 className="font-semibold text-gray-900 text-sm">ERP Solutions</h3>
+                    <p className="text-xs text-gray-500">Enterprise Systems</p>
                   </div>
                 </div>
               </div>
 
-              {/* Stats card */}
-              <div className="col-span-2 bg-gradient-to-r from-blue-600 to-indigo-600 p-5 rounded-2xl shadow-xl">
-                <div className="flex justify-around text-white">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold">100+</div>
-                    <div className="text-blue-100 text-xs">Projects</div>
+              {/* Digital Marketing */}
+              <div className="group bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-orange-100 hover:-translate-y-0.5 transition-all duration-300">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                    </svg>
                   </div>
-                  <div className="w-px bg-white/20"></div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold">3+</div>
-                    <div className="text-blue-100 text-xs">Years</div>
-                  </div>
-                  <div className="w-px bg-white/20"></div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold">24/7</div>
-                    <div className="text-blue-100 text-xs">Support</div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 text-sm">Digital Marketing</h3>
+                    <p className="text-xs text-gray-500">SEO & Growth</p>
                   </div>
                 </div>
+              </div>
+
+              {/* API Integration */}
+              <div className="group bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-cyan-100 hover:-translate-y-0.5 transition-all duration-300">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-lg flex items-center justify-center shadow-md shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 text-sm">API Integration</h3>
+                    <p className="text-xs text-gray-500">Seamless Connect</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Maintenance & Support */}
+              <div className="group bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-rose-100 hover:-translate-y-0.5 transition-all duration-300">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-rose-500 to-pink-600 rounded-lg flex items-center justify-center shadow-md shadow-rose-500/20 group-hover:scale-105 transition-transform">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900 text-sm">Maintenance</h3>
+                    <p className="text-xs text-gray-500">24/7 Support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile service cards */}
+          <div className="lg:hidden">
+            <div className="flex flex-wrap justify-center gap-2">
+              <div className="flex items-center gap-2 bg-white px-3 py-2 rounded-full border border-gray-100 shadow-sm">
+                <div className="w-6 h-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-md flex items-center justify-center">
+                  <span className="text-white font-mono text-[10px] font-bold">&lt;/&gt;</span>
+                </div>
+                <span className="text-xs font-medium text-gray-700">Web</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white px-3 py-2 rounded-full border border-gray-100 shadow-sm">
+                <div className="w-6 h-6 bg-gradient-to-br from-emerald-500 to-green-600 rounded-md flex items-center justify-center">
+                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <span className="text-xs font-medium text-gray-700">Mobile</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white px-3 py-2 rounded-full border border-gray-100 shadow-sm">
+                <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-violet-600 rounded-md flex items-center justify-center">
+                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <span className="text-xs font-medium text-gray-700">ERP</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white px-3 py-2 rounded-full border border-gray-100 shadow-sm">
+                <div className="w-6 h-6 bg-gradient-to-br from-orange-500 to-red-500 rounded-md flex items-center justify-center">
+                  <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                  </svg>
+                </div>
+                <span className="text-xs font-medium text-gray-700">Marketing</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom wave */}
-      <div className="absolute bottom-0 left-0 w-full">
-        <svg viewBox="0 0 1440 120" className="w-full h-auto" preserveAspectRatio="none">
+      {/* Bottom curve */}
+      <div className="mt-2 lg:mt-2">
+        <svg viewBox="0 0 1440 40" className="w-full h-auto" preserveAspectRatio="none">
           <path
             fill="#ffffff"
-            d="M0,64L48,69.3C96,75,192,85,288,90.7C384,96,480,96,576,85.3C672,75,768,53,864,48C960,43,1056,53,1152,58.7C1248,64,1344,64,1392,64L1440,64L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
+            d="M0,20 C360,40 720,0 1080,20 C1260,30 1380,25 1440,20 L1440,40 L0,40 Z"
           ></path>
         </svg>
       </div>
