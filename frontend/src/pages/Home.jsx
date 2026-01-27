@@ -1,5 +1,4 @@
-import Hero from '../components/Hero';
-import PricingBanner from '../components/PricingBanner';
+import HeroSlider from '../components/HeroSlider';
 import { Link } from 'react-router-dom';
 
 const servicesPreview = [
@@ -95,8 +94,7 @@ const features = [
 const Home = () => {
   return (
     <div className="min-h-screen">
-      <Hero />
-      <PricingBanner />
+      <HeroSlider />
 
       {/* Services Section */}
       <section className="py-24 bg-white relative overflow-hidden">
