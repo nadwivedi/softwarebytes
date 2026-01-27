@@ -97,7 +97,7 @@ const Home = () => {
       <HeroSlider />
 
       {/* Services Section */}
-      <section className="pt-8 pb-12 bg-white relative overflow-hidden">
+      <section className="pt-8 pb-4 md:pb-12 bg-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -146,7 +146,7 @@ const Home = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50/30 relative overflow-hidden">
+      <section className="py-8 md:py-16 bg-gradient-to-br from-gray-50 to-blue-50/30 relative overflow-hidden">
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-indigo-100 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
