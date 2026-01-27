@@ -101,43 +101,51 @@ const Services = () => {
       {/* Services Grid */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group relative bg-white rounded-3xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500"
+                className="group relative bg-white rounded-2xl md:rounded-3xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500"
               >
-                <div className="absolute top-6 right-6 text-7xl font-bold text-gray-50 group-hover:text-blue-50 transition-colors duration-300">
+                <div className="absolute top-4 right-4 md:top-6 md:right-6 text-5xl md:text-7xl font-bold text-gray-50 group-hover:text-blue-50 transition-colors duration-300">
                   {service.number}
                 </div>
 
-                <div className="relative p-10">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    {service.icon}
+                <div className="relative p-5 md:p-10">
+                  <div className="flex items-start gap-4 md:block">
+                    <div className={`w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br ${service.gradient} rounded-xl md:rounded-2xl flex items-center justify-center text-white md:mb-6 group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
+                      {service.icon}
+                    </div>
+                    <div className="md:hidden">
+                      <h3 className="text-lg font-bold text-gray-900">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm mt-1 leading-relaxed">{service.description}</p>
+                    </div>
                   </div>
 
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  <h3 className="hidden md:block text-2xl font-bold text-gray-900 mb-4">
                     {service.title}
                   </h3>
 
-                  <p className="text-gray-600 mb-8 leading-relaxed">{service.description}</p>
+                  <p className="hidden md:block text-gray-600 mb-8 leading-relaxed">{service.description}</p>
 
-                  <ul className="space-y-4">
+                  <ul className="grid grid-cols-2 gap-2 md:grid-cols-1 md:space-y-0 md:gap-4 mt-3 md:mt-0">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center gap-3">
-                        <span className="flex-shrink-0 w-6 h-6 rounded-full bg-green-100 flex items-center justify-center">
-                          <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <li key={featureIndex} className="flex items-center gap-2 md:gap-3">
+                        <span className="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-100 flex items-center justify-center">
+                          <svg className="w-3 h-3 md:w-4 md:h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </span>
-                        <span className="text-gray-700">{feature}</span>
+                        <span className="text-gray-700 text-xs md:text-base">{feature}</span>
                       </li>
                     ))}
                   </ul>
 
                   <Link
                     to="/contact"
-                    className="group/btn inline-flex items-center gap-2 mt-8 text-blue-600 font-semibold hover:gap-3 transition-all duration-300"
+                    className="group/btn inline-flex items-center gap-2 mt-4 md:mt-8 text-blue-600 text-sm md:text-base font-semibold hover:gap-3 transition-all duration-300"
                   >
                     Get Started
                     <span className="font-mono">&lt;/&gt;</span>
