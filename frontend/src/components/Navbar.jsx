@@ -29,15 +29,15 @@ const Navbar = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18 py-4">
-          <Link to="/" className="flex items-center space-x-3 group">
-            <div className="relative">
-              <span className="text-2xl font-mono font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent group-hover:from-indigo-600 group-hover:to-blue-600 transition-all duration-500">
+          <Link to="/" className="flex items-center gap-2.5 group">
+            <div className="relative w-9 h-9 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center group-hover:from-indigo-600 group-hover:to-blue-600 transition-all duration-500 shadow-md shadow-blue-500/20">
+              <span className="text-sm font-mono font-bold text-white">
                 &lt;/&gt;
               </span>
             </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900 tracking-tight">Software Bytes</span>
-              <span className="text-[10px] text-gray-500 tracking-widest uppercase -mt-1">Innovation in every bytes</span>
+            <div className="flex flex-col leading-none">
+              <span className="text-lg font-bold text-gray-900 tracking-tight">Software Bytes</span>
+              <span className="text-[9px] text-gray-400 tracking-[0.2em] uppercase mt-0.5 font-medium">Innovation in every byte</span>
             </div>
           </Link>
 

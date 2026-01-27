@@ -482,25 +482,15 @@ const HeroSlider = () => {
       </div>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         <button
           onClick={() => setCurrentSlide(0)}
-          className={`h-2 rounded-full transition-all duration-300 ${currentSlide === 0 ? 'w-8 bg-blue-600' : 'w-2 bg-gray-400 hover:bg-gray-500'}`}
+          className={`h-2 rounded-full transition-all duration-300 ${currentSlide === 0 ? 'w-8 bg-blue-600' : 'w-2 bg-white/60 hover:bg-white/80'}`}
         />
         <button
           onClick={() => setCurrentSlide(1)}
-          className={`h-2 rounded-full transition-all duration-300 ${currentSlide === 1 ? 'w-8 bg-blue-600' : 'w-2 bg-gray-400 hover:bg-gray-500'}`}
+          className={`h-2 rounded-full transition-all duration-300 ${currentSlide === 1 ? 'w-8 bg-blue-600' : 'w-2 bg-white/60 hover:bg-white/80'}`}
         />
-      </div>
-
-      {/* Bottom curve */}
-      <div className="mt-0">
-        <svg viewBox="0 0 1440 40" className="w-full h-auto" preserveAspectRatio="none">
-          <path
-            fill="#ffffff"
-            d="M0,20 C360,40 720,0 1080,20 C1260,30 1380,25 1440,20 L1440,40 L0,40 Z"
-          ></path>
-        </svg>
       </div>
     </section>
   );
