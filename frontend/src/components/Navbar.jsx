@@ -26,13 +26,13 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 border-b border-slate-800 transition-all duration-300 ${
-        scrolled ? 'bg-slate-800/90 backdrop-blur-md shadow-lg shadow-black/40' : 'bg-black shadow-md shadow-black/20'
+        scrolled ? 'bg-slate-800/90 backdrop-blur-md shadow-lg shadow-black/40' : 'bg-gray-50 shadow-md shadow-black/20'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18 py-4">
           <Link to="/" className="flex items-center group">
-            <img src="/sofwarebytes.webp" alt="Software Bytes logo" className=" h-18 sm:h-20 w-auto" />
+            <img src="/softwhite.webp" alt="Software Bytes logo" className=" h-18 sm:h-20 w-auto" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">
