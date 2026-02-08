@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
@@ -24,21 +24,15 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white shadow-md'
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 border-b border-slate-800 transition-all duration-300 ${
+        scrolled ? 'bg-slate-800/90 backdrop-blur-md shadow-lg shadow-black/40' : 'bg-black shadow-md shadow-black/20'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-18 py-4">
-          <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="relative w-9 h-9 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center group-hover:from-indigo-600 group-hover:to-blue-600 transition-all duration-500 shadow-md shadow-blue-500/20">
-              <span className="text-sm font-mono font-bold text-white">
-                &lt;/&gt;
-              </span>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="text-lg font-bold text-gray-900 tracking-tight">Software Bytes</span>
-              <span className="text-[9px] text-gray-400 tracking-[0.2em] uppercase mt-0.5 font-medium">Innovation in every byte</span>
-            </div>
+          <Link to="/" className="flex items-center group">
+            <img src="/sofwarebytes.webp" alt="Software Bytes logo" className=" h-18 sm:h-20 w-auto" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">
@@ -48,19 +42,19 @@ const Navbar = () => {
                 to={link.path}
                 className={`relative px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                   isActive(link.path)
-                    ? 'text-blue-600'
-                    : 'text-gray-600 hover:text-blue-600 hover:bg-blue-50'
+                    ? 'text-cyan-300 bg-slate-700/70'
+                    : 'text-slate-300 hover:text-cyan-300 hover:bg-slate-700/60'
                 }`}
               >
                 {link.label}
                 {isActive(link.path) && (
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-blue-600 rounded-full"></span>
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-cyan-300 rounded-full"></span>
                 )}
               </Link>
             ))}
             <Link
               to="/contact"
-              className="ml-4 inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-0.5 transition-all duration-300"
+              className="ml-4 inline-flex items-center gap-2 bg-cyan-500 text-slate-950 px-6 py-2.5 rounded-full font-semibold hover:bg-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 hover:-translate-y-0.5 transition-all duration-300"
             >
               Get Started
               <span className="text-sm opacity-75">&lt;/&gt;</span>
@@ -68,7 +62,7 @@ const Navbar = () => {
           </div>
 
           <button
-            className="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-lg text-slate-300 hover:bg-slate-900 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -82,18 +76,16 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`md:hidden overflow-hidden transition-all duration-300 ${
-        isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-      }`}>
-        <div className="bg-white border-t px-4 py-4 space-y-2">
+      <div className={`md:hidden overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className="bg-slate-800 border-t border-slate-600 px-4 py-4 space-y-2">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
               className={`block px-4 py-3 rounded-xl font-medium transition-all duration-300 ${
                 isActive(link.path)
-                  ? 'text-blue-600 bg-blue-50'
-                  : 'text-gray-600 hover:text-blue-600 hover:bg-gray-50'
+                  ? 'text-cyan-300 bg-slate-700'
+                  : 'text-slate-300 hover:text-cyan-300 hover:bg-slate-700/60'
               }`}
               onClick={() => setIsOpen(false)}
             >
@@ -102,7 +94,7 @@ const Navbar = () => {
           ))}
           <Link
             to="/contact"
-            className="block bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-3 rounded-xl text-center font-medium mt-4"
+            className="block bg-cyan-500 text-slate-950 px-4 py-3 rounded-xl text-center font-semibold mt-4"
             onClick={() => setIsOpen(false)}
           >
             Get Started &lt;/&gt;
