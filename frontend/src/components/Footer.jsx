@@ -29,14 +29,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand section */}
           <div className="lg:col-span-1 space-y-6">
-            <Link to="/" className="flex items-center space-x-3 group">
-              <span className="text-3xl font-mono font-bold bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
-                &lt;/&gt;
-              </span>
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-white">Software Bytes</span>
-                <span className="text-[10px] text-gray-400 tracking-widest uppercase">Digital Solutions</span>
-              </div>
+            <Link to="/" className="inline-flex items-center group">
+              <img src="/softwarebytes.webp" alt="Software Bytes logo" className="h-16 w-auto" />
             </Link>
             <p className="text-gray-400 leading-relaxed">
               Transforming businesses through innovative software solutions.
