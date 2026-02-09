@@ -76,270 +76,231 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
-      {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 -left-40 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/5 text-[300px] font-mono font-bold">
-            &lt;/&gt;
-          </div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium mb-6">
+    <div className="min-h-screen bg-slate-50 pt-28 pb-16">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-14">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-700 text-sm font-medium mb-4">
             <span className="font-mono">&lt;/&gt;</span>
-            Get In Touch
-          </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Contact Us
+          </span>
+          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+            Let's Build Something Great
           </h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            Get in touch with our team for a free consultation
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            Reach out for a free consultation. We usually respond within one business day.
           </p>
         </div>
-      </section>
 
-      {/* Contact Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Contact Info */}
-            <div className="space-y-6">
-              {contactInfo.map((info, index) => (
-                <div
-                  key={index}
-                  className="group bg-white rounded-3xl border border-gray-100 p-8 hover:shadow-xl hover:border-transparent transition-all duration-300"
-                >
-                  <div className="flex items-center gap-4">
-                    <div className={`w-14 h-14 ${info.color} rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}>
-                      {info.icon}
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-gray-900">{info.title}</h3>
-                      {Array.isArray(info.value) ? (
-                        <div className="flex flex-col">
-                          {info.value.map((phone) => (
-                            <a
-                              key={phone}
-                              href={`tel:${phone.replace(/\s+/g, '')}`}
-                              className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
-                            >
-                              {phone}
-                            </a>
-                          ))}
-                        </div>
-                      ) : info.title === 'Email Address' ? (
-                        <a
-                          href={`mailto:${info.value}`}
-                          className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
-                        >
-                          {info.value}
-                        </a>
-                      ) : (
-                        <p className="text-gray-600">{info.value}</p>
-                      )}
-                    </div>
+        <div className="grid lg:grid-cols-5 gap-8 items-start">
+          <div className="lg:col-span-2 space-y-6">
+            {contactInfo.map((info, index) => (
+              <div
+                key={index}
+                className="group bg-white rounded-2xl border border-slate-100 p-6 shadow-sm hover:shadow-lg transition-all duration-300"
+              >
+                <div className="flex items-start gap-4">
+                  <div className={`w-12 h-12 ${info.color} rounded-xl flex items-center justify-center text-white group-hover:scale-105 transition-transform duration-300`}>
+                    {info.icon}
                   </div>
-                </div>
-              ))}
-
-              {/* Social Links */}
-              <div className="bg-gradient-to-br from-gray-50 to-blue-50/30 rounded-3xl p-8">
-                <h3 className="font-bold text-gray-900 mb-6 flex items-center gap-2">
-                  <span className="text-blue-600 font-mono">&lt;</span>
-                  Follow Us
-                  <span className="text-blue-600 font-mono">/&gt;</span>
-                </h3>
-                <div className="flex gap-3">
-                  {socials.map((social, index) => (
-                    <a
-                      key={index}
-                      href="#"
-                      className={`w-12 h-12 ${social.color} rounded-xl flex items-center justify-center text-white transition-all duration-300 hover:scale-110`}
-                    >
-                      <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                        <path d={social.icon}/>
-                      </svg>
-                    </a>
-                  ))}
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1">{info.title}</h3>
+                    {Array.isArray(info.value) ? (
+                      <div className="flex flex-col gap-1">
+                        {info.value.map((phone) => (
+                          <a
+                            key={phone}
+                            href={`tel:${phone.replace(/\s+/g, '')}`}
+                            className="text-slate-600 hover:text-blue-600 transition-colors duration-300"
+                          >
+                            {phone}
+                          </a>
+                        ))}
+                      </div>
+                    ) : info.title === 'Email Address' ? (
+                      <a
+                        href={`mailto:${info.value}`}
+                        className="text-slate-600 hover:text-blue-600 transition-colors duration-300 break-all"
+                      >
+                        {info.value}
+                      </a>
+                    ) : (
+                      <p className="text-slate-600">{info.value}</p>
+                    )}
+                  </div>
                 </div>
               </div>
+            ))}
+
+            <div className="bg-white rounded-2xl border border-slate-100 p-6 shadow-sm">
+              <h3 className="font-semibold text-slate-900 mb-4">Follow Us</h3>
+              <div className="flex flex-wrap gap-3">
+                {socials.map((social, index) => (
+                  <a
+                    key={index}
+                    href="#"
+                    className={`w-11 h-11 ${social.color} rounded-xl flex items-center justify-center text-white transition-all duration-300 hover:scale-105`}
+                  >
+                    <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                      <path d={social.icon}/>
+                    </svg>
+                  </a>
+                ))}
+              </div>
             </div>
+          </div>
 
-            {/* Contact Form */}
-            <div className="lg:col-span-2">
-              <div className="bg-white rounded-3xl border border-gray-100 p-8 md:p-10 shadow-xl">
-                <div className="mb-8">
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                    Send us a Message
-                  </h2>
-                  <p className="text-gray-600">
-                    Fill out the form below and we'll get back to you soon
-                  </p>
+          <div className="lg:col-span-3">
+            <div className="bg-white rounded-3xl border border-slate-100 p-8 md:p-10 shadow-xl shadow-slate-900/5">
+              <div className="mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+                  Send us a Message
+                </h2>
+                <p className="text-slate-600">
+                  Tell us about your project and we will get back to you shortly.
+                </p>
+              </div>
+
+              {submitStatus === 'success' && (
+                <div className="mb-8 p-5 bg-green-50 border border-green-200 text-green-700 rounded-2xl">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
+                      <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <span className="font-medium">Message sent successfully! We will get back to you soon.</span>
+                  </div>
                 </div>
+              )}
 
-                {submitStatus === 'success' && (
-                  <div className="mb-8 p-5 bg-green-50 border border-green-200 text-green-700 rounded-2xl">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
-                        <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <span className="font-medium">Message sent successfully! We will get back to you soon.</span>
-                    </div>
-                  </div>
-                )}
-
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label className="block text-sm font-semibold text-gray-700 mb-3">
-                        Your Name
-                      </label>
-                      <div className="relative">
-                        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                          <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                          </svg>
-                        </div>
-                        <input
-                          type="text"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleChange}
-                          required
-                          placeholder="John Doe"
-                          className="w-full pl-12 pr-4 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
-                        />
-                      </div>
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-semibold text-gray-700 mb-3">
-                        Your Email
-                      </label>
-                      <div className="relative">
-                        <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                          <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                          </svg>
-                        </div>
-                        <input
-                          type="email"
-                          name="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          required
-                          placeholder="john@example.com"
-                          className="w-full pl-12 pr-4 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
-                        />
-                      </div>
-                    </div>
-                  </div>
-
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-3">
-                      Phone Number
+                    <label className="block text-sm font-semibold text-slate-700 mb-3">
+                      Your Name
                     </label>
                     <div className="relative">
                       <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                        <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                         </svg>
                       </div>
                       <input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
+                        type="text"
+                        name="name"
+                        value={formData.name}
                         onChange={handleChange}
-                        placeholder="+91 62646 82508"
-                        className="w-full pl-12 pr-4 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
+                        required
+                        placeholder="John Doe"
+                        className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-3">
-                      Your Message
+                    <label className="block text-sm font-semibold text-slate-700 mb-3">
+                      Your Email
                     </label>
                     <div className="relative">
-                      <div className="absolute top-4 left-4 pointer-events-none">
-                        <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                      <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                        <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
                       </div>
-                      <textarea
-                        name="message"
-                        value={formData.message}
+                      <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
                         onChange={handleChange}
                         required
-                        rows="5"
-                        placeholder="Tell us about your project..."
-                        className="w-full pl-12 pr-4 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300 resize-none"
-                      ></textarea>
+                        placeholder="john@example.com"
+                        className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
+                      />
                     </div>
                   </div>
+                </div>
 
-                  <button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className={`group w-full py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-2xl hover:shadow-xl hover:shadow-blue-500/25 transition-all duration-300 flex items-center justify-center gap-3 ${
-                      isSubmitting ? 'opacity-75 cursor-not-allowed' : ''
-                    }`}
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        Sending...
-                      </>
-                    ) : (
-                      <>
-                        Send Message
-                        <span className="group-hover:translate-x-1 transition-transform duration-300 font-mono">&lt;/&gt;</span>
-                      </>
-                    )}
-                  </button>
-                </form>
-              </div>
+                <div>
+                  <label className="block text-sm font-semibold text-slate-700 mb-3">
+                    Phone Number
+                  </label>
+                  <div className="relative">
+                    <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                      <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    <input
+                      type="tel"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="+91 62646 82508"
+                      className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold text-slate-700 mb-3">
+                    Your Message
+                  </label>
+                  <div className="relative">
+                    <div className="absolute top-4 left-4 pointer-events-none">
+                      <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                      </svg>
+                    </div>
+                    <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      rows="5"
+                      placeholder="Tell us about your project..."
+                      className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300 resize-none"
+                    ></textarea>
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className={`group w-full py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-2xl hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300 flex items-center justify-center gap-3 ${
+                    isSubmitting ? 'opacity-75 cursor-not-allowed' : ''
+                  }`}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      Send Message
+                      <span className="group-hover:translate-x-1 transition-transform duration-300 font-mono">&lt;/&gt;</span>
+                    </>
+                  )}
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Map Section Placeholder */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-700 text-sm font-medium mb-4">
-              <span className="font-mono">&lt;/&gt;</span>
-              Find Us
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Visit Our Office
-            </h2>
-            <p className="text-lg text-gray-600">
-              Located in the heart of Raipur, Chhattisgarh
-            </p>
-          </div>
-
-          <div className="bg-white rounded-3xl shadow-xl overflow-hidden h-96 flex items-center justify-center border border-gray-100">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white mx-auto mb-6">
-                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Software Bytes</h3>
-              <p className="text-gray-600">Raipur, Chhattisgarh, India</p>
-              <p className="text-gray-500 text-sm mt-2 font-mono">&lt;/&gt; Innovation Hub</p>
-            </div>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+        <div className="bg-white rounded-3xl border border-slate-100 shadow-sm p-8 md:p-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">Visit Our Office</h2>
+          <p className="text-slate-600 mb-8">Raipur, Chhattisgarh, India</p>
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-slate-50 border border-slate-200 text-slate-700">
+            <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span>Software Bytes, Raipur</span>
           </div>
         </div>
       </section>
