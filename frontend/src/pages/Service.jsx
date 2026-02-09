@@ -3,67 +3,67 @@ import { Link } from 'react-router-dom';
 const services = [
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
       </svg>
     ),
     title: 'Software Development',
-    description: 'Custom software solutions designed to streamline your business processes and boost productivity. From enterprise applications to niche tools, we have got you covered.',
+    description: 'Custom software built to automate workflows and improve productivity.',
     features: [
-      'Custom Application Development',
-      'Legacy System Modernization',
+      'Custom Applications',
+      'Legacy Modernization',
       'API Integration',
-      'Maintenance & Support',
+      'Support & Maintenance',
     ],
     gradient: 'from-blue-500 to-indigo-600',
     number: '01',
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     ),
     title: 'ERP Solutions',
-    description: 'End-to-end ERP implementation and customization to streamline your business operations. We help organizations optimize their resources and improve efficiency.',
+    description: 'Practical ERP systems for daily operations, tracking, and reporting.',
     features: [
-      'ERP Implementation',
-      'Custom Module Development',
-      'Data Migration',
-      'Training & Support',
+      'Hostel Manager ERP',
+      'RtoSarthi ERP',
+      'Business ERP',
+      'Setup & Support',
     ],
     gradient: 'from-purple-500 to-violet-600',
     number: '02',
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
       </svg>
     ),
     title: 'Website Design & Full Stack Development',
-    description: 'Stunning, responsive websites that convert visitors into customers. Complete front-end and back-end development using latest technologies.',
+    description: 'Responsive websites and full-stack apps built for speed and conversion.',
     features: [
-      'Responsive Web Design',
-      'E-Commerce Solutions',
-      'CMS Development',
-      'SEO Optimization',
+      'Responsive Design',
+      'E-Commerce',
+      'CMS Setup',
+      'SEO Basics',
     ],
     gradient: 'from-cyan-500 to-blue-600',
     number: '03',
   },
   {
     icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
       </svg>
     ),
     title: 'Mobile App Development',
-    description: 'Native and cross-platform mobile applications that engage users and drive business growth. Available for iOS, Android, and hybrid platforms.',
+    description: 'Reliable mobile apps for Android and iOS with smooth user experience.',
     features: [
-      'iOS App Development',
-      'Android App Development',
-      'Cross-Platform Apps',
+      'Android Apps',
+      'iOS Apps',
+      'Cross-Platform',
       'App Maintenance',
     ],
     gradient: 'from-green-500 to-emerald-600',
@@ -73,64 +73,49 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
-      {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 -left-40 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/5 text-[300px] font-mono font-bold">
-            &lt;/&gt;
-          </div>
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium mb-6">
+    <div className="min-h-screen bg-slate-50 pt-28">
+      {/* Page Heading */}
+      <section className="pb-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-700 text-sm font-medium mb-4">
             <span className="font-mono">&lt;/&gt;</span>
-            What We Offer
-          </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Our Services
+          </span>
+          <h1 className="text-2xl md:text-4xl font-bold text-slate-900 mb-4">
+            Solutions Built For Real Business Growth
           </h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-            Comprehensive software solutions tailored to your business needs
+          <p className="text-xs md:text-sm text-slate-600 max-w-3xl mx-auto">
+            From custom software to specialized ERP products, we design and deliver practical systems that help your team move faster and work smarter.
           </p>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 bg-white">
+      <section className="pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
-                className="group relative bg-white rounded-2xl md:rounded-3xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-500"
+                className="group relative bg-white rounded-2xl md:rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-500"
               >
-                <div className="absolute top-4 right-4 md:top-6 md:right-6 text-5xl md:text-7xl font-bold text-gray-50 group-hover:text-blue-50 transition-colors duration-300">
+                <div className="absolute top-4 right-4 md:top-6 md:right-6 text-5xl md:text-7xl font-bold text-slate-100 group-hover:text-blue-100 transition-colors duration-300">
                   {service.number}
                 </div>
 
-                <div className="relative p-5 md:p-10">
-                  <div className="flex items-start gap-4 md:block">
-                    <div className={`w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br ${service.gradient} rounded-xl md:rounded-2xl flex items-center justify-center text-white md:mb-6 group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
+                <div className="relative p-5 md:p-7">
+                  <div className="flex items-center gap-3 md:gap-4 mb-4">
+                    <div className={`w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
                       {service.icon}
                     </div>
-                    <div className="md:hidden">
-                      <h3 className="text-lg font-bold text-gray-900">
-                        {service.title}
-                      </h3>
-                      <p className="text-gray-600 text-sm mt-1 leading-relaxed">{service.description}</p>
-                    </div>
+                    <h3 className="text-lg md:text-xl font-bold text-gray-900 leading-tight">
+                      {service.title}
+                    </h3>
                   </div>
 
-                  <h3 className="hidden md:block text-2xl font-bold text-gray-900 mb-4">
-                    {service.title}
-                  </h3>
+                  <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">{service.description}</p>
 
-                  <p className="hidden md:block text-gray-600 mb-8 leading-relaxed">{service.description}</p>
-
-                  <ul className="grid grid-cols-2 gap-2 md:grid-cols-1 md:space-y-0 md:gap-4 mt-3 md:mt-0">
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-2 md:gap-4 mt-3 md:mt-0">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center gap-2 md:gap-3">
                         <span className="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-100 flex items-center justify-center">
@@ -145,7 +130,7 @@ const Services = () => {
 
                   <Link
                     to="/contact"
-                    className="group/btn inline-flex items-center gap-2 mt-4 md:mt-8 text-blue-600 text-sm md:text-base font-semibold hover:gap-3 transition-all duration-300"
+                    className="group/btn inline-flex items-center gap-2 mt-5 md:mt-8 px-4 py-2 rounded-xl bg-blue-50 text-blue-700 text-sm md:text-base font-semibold hover:bg-blue-100 hover:gap-3 transition-all duration-300"
                   >
                     Get Started
                     <span className="font-mono">&lt;/&gt;</span>
@@ -158,7 +143,7 @@ const Services = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-24 bg-white">
+      <section className="py-20 bg-white border-y border-slate-200/70">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-700 text-sm font-medium mb-4">
@@ -173,14 +158,14 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-4 gap-6">
             {[
               { step: '01', title: 'Discovery', description: 'Understanding your requirements and goals' },
               { step: '02', title: 'Planning', description: 'Creating detailed roadmap and architecture' },
               { step: '03', title: 'Development', description: 'Building your solution with agile methodology' },
               { step: '04', title: 'Delivery', description: 'Deploying and providing ongoing support' },
             ].map((item, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="relative bg-slate-50 rounded-2xl p-6 border border-slate-100">
                 <div className="text-center">
                   <div className="relative inline-block">
                     <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mb-6 mx-auto">

@@ -91,6 +91,21 @@ const features = [
   },
 ];
 
+const erpProducts = [
+  {
+    name: 'Hostel Manager ERP',
+    description: 'Complete hostel management system for admissions, rooms, fees, attendance, and daily operations.',
+  },
+  {
+    name: 'RtoSarthi ERP',
+    description: 'Specialized ERP for RTO agents to manage applications, document tracking, and service workflows.',
+  },
+  {
+    name: 'Business ERP',
+    description: 'Integrated accounting and billing ERP to handle invoicing, payments, ledgers, and reports.',
+  },
+];
+
 const Home = () => {
   return (
     <div className="min-h-screen">
@@ -141,6 +156,29 @@ const Home = () => {
               View All Services
               <span className="group-hover:translate-x-1 transition-transform duration-300 font-mono">&lt;/&gt;</span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ERP Products Section */}
+      <section className="py-8 md:py-14 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-2">
+              Our ERP Solutions
+            </h2>
+            <p className="text-sm md:text-base text-gray-600 max-w-2xl mx-auto">
+              Purpose-built ERP products designed for real business operations
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+            {erpProducts.map((product, index) => (
+              <div key={index} className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300">
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{product.name}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{product.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

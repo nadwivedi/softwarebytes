@@ -79,6 +79,10 @@ const About = () => {
                   We believe in building long-term partnerships with our clients, understanding
                   their unique challenges, and delivering solutions that exceed expectations.
                 </p>
+                <p>
+                  Our ERP portfolio includes Hostel Manager for hostel operations, RtoSarthi for
+                  RTO agents, and Business ERP for accounting and billing workflows.
+                </p>
               </div>
               <Link
                 to="/contact"
