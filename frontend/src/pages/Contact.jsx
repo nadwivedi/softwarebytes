@@ -51,7 +51,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'Phone Number',
-      value: '+91 98765 43210',
+      value: ['+91 62646 82508', '+91 92024 69725'],
       color: 'bg-green-500',
       lightColor: 'bg-green-100',
     },
@@ -62,7 +62,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'Email Address',
-      value: 'info@softwarebytes.in',
+      value: 'softwarebytesindia@gmail.com',
       color: 'bg-purple-500',
       lightColor: 'bg-purple-100',
     },
@@ -118,7 +118,28 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-gray-900">{info.title}</h3>
-                      <p className="text-gray-600">{info.value}</p>
+                      {Array.isArray(info.value) ? (
+                        <div className="flex flex-col">
+                          {info.value.map((phone) => (
+                            <a
+                              key={phone}
+                              href={`tel:${phone.replace(/\s+/g, '')}`}
+                              className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
+                            >
+                              {phone}
+                            </a>
+                          ))}
+                        </div>
+                      ) : info.title === 'Email Address' ? (
+                        <a
+                          href={`mailto:${info.value}`}
+                          className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
+                        >
+                          {info.value}
+                        </a>
+                      ) : (
+                        <p className="text-gray-600">{info.value}</p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -234,7 +255,7 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 62646 82508"
                         className="w-full pl-12 pr-4 py-4 bg-gray-50 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
                       />
                     </div>

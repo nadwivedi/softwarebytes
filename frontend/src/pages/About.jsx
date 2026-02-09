@@ -8,13 +8,6 @@ const About = () => {
     { number: '24/7', label: 'Support Available', icon: '04' },
   ];
 
-  const team = [
-    { name: 'John Smith', role: 'CEO & Founder', initials: 'JS' },
-    { name: 'Sarah Johnson', role: 'Technical Director', initials: 'SJ' },
-    { name: 'Mike Williams', role: 'Lead Developer', initials: 'MW' },
-    { name: 'Emily Davis', role: 'Project Manager', initials: 'ED' },
-  ];
-
   const whyChooseUs = [
     {
       title: 'Raipur Based',
@@ -223,45 +216,6 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 to-blue-50/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 rounded-full text-blue-700 text-sm font-medium mb-4">
-              <span className="font-mono">&lt;/&gt;</span>
-              Our Team
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Our Leadership Team
-            </h2>
-            <p className="text-lg text-gray-600">
-              Meet the experts behind our success
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map((member, index) => (
-              <div
-                key={index}
-                className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
-              >
-                <div className="aspect-square bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 flex items-center justify-center relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  <span className="text-6xl font-bold text-white/90">{member.initials}</span>
-                  <div className="absolute bottom-4 right-4 text-white/20 font-mono text-2xl">
-                    &lt;/&gt;
-                  </div>
-                </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-blue-600 font-medium">{member.role}</p>
-                </div>
               </div>
             ))}
           </div>
