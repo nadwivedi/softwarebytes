@@ -59,9 +59,9 @@ const About = () => {
                 <span className="font-mono">&lt;/&gt;</span>
                 Our Story
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Who We Are
-              </h2>
+              </h1>
               <div className="space-y-6 text-lg text-gray-600">
                 <p>
                   Based in the heart of Raipur, Chhattisgarh, Software Bytes has established

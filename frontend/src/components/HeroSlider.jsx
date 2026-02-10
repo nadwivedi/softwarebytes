@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 const HeroSlider = () => {
@@ -42,7 +42,7 @@ const HeroSlider = () => {
                     </h1>
 
                     <p className="text-xs md:text-sm text-gray-500 max-w-md mx-auto lg:mx-0">
-                      ERP Solutions • Web & Mobile Development • API Integration • Digital Marketing
+                      ERP Solutions | Web & Mobile Development | API Integration | Digital Marketing
                     </p>
 
                     {/* CTA Buttons */}
@@ -124,21 +124,6 @@ const HeroSlider = () => {
                           <div>
                             <h3 className="font-semibold text-gray-900 text-sm">Mobile Apps</h3>
                             <p className="text-xs text-gray-500">iOS & Android</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* ERP Solutions */}
-                      <div className="group bg-white p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-purple-100 hover:-translate-y-0.5 transition-all duration-300">
-                        <div className="flex items-center gap-3">
-                          <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-violet-600 rounded-lg flex items-center justify-center shadow-md shadow-purple-500/20 group-hover:scale-105 transition-transform">
-                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                            </svg>
-                          </div>
-                          <div>
-                            <h3 className="font-semibold text-gray-900 text-sm">ERP Solutions</h3>
-                            <p className="text-xs text-gray-500">Enterprise Systems</p>
                           </div>
                         </div>
                       </div>
@@ -248,9 +233,9 @@ const HeroSlider = () => {
                 <div className="grid lg:grid-cols-5 gap-4 lg:gap-8 items-center">
                   {/* Left content */}
                   <div className="lg:col-span-2 space-y-2 lg:space-y-3 text-center lg:text-left">
-                    <h1 className="text-xl md:text-2xl lg:text-4xl font-bold text-white leading-tight">
+                    <h2 className="text-xl md:text-2xl lg:text-4xl font-bold text-white leading-tight">
                       Launch Your <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">Online Presence</span>
-                    </h1>
+                    </h2>
 
                     <p className="text-xs md:text-sm text-blue-100/70 max-w-md mx-auto lg:mx-0">
                       Professional websites with free domain & hosting
@@ -318,7 +303,7 @@ const HeroSlider = () => {
                           <div className="flex-1">
                             <h3 className="font-bold text-white text-xs">Portfolio Site</h3>
                             <div className="flex items-baseline gap-1 mt-1">
-                              <span className="text-xl font-bold text-white">₹2,599</span>
+                              <span className="text-xl font-bold text-white">â‚¹2,599</span>
                             </div>
                             <div className="mt-2 space-y-1">
                               <div className="flex items-center gap-1 text-[10px] text-blue-100/80">
@@ -359,7 +344,7 @@ const HeroSlider = () => {
                           <div className="flex-1">
                             <h3 className="font-bold text-white text-xs">E-Commerce Site</h3>
                             <div className="flex items-baseline gap-1 mt-1">
-                              <span className="text-xl font-bold text-white">₹6,999</span>
+                              <span className="text-xl font-bold text-white">â‚¹6,999</span>
                             </div>
                             <div className="mt-2 space-y-1">
                               <div className="flex items-center gap-1 text-[10px] text-yellow-100/90">
@@ -406,7 +391,7 @@ const HeroSlider = () => {
                           <div>
                             <h3 className="font-bold text-white text-xs">Portfolio Site</h3>
                             <div className="flex items-baseline gap-1 mt-1">
-                              <span className="text-lg font-bold text-white">₹2,599</span>
+                              <span className="text-lg font-bold text-white">â‚¹2,599</span>
                             </div>
                           </div>
                           <div className="mt-1 space-y-1 w-full">
@@ -447,7 +432,7 @@ const HeroSlider = () => {
                           <div>
                             <h3 className="font-bold text-white text-xs">E-Commerce Site</h3>
                             <div className="flex items-baseline gap-1 mt-1">
-                              <span className="text-lg font-bold text-white">₹6,999</span>
+                              <span className="text-lg font-bold text-white">â‚¹6,999</span>
                             </div>
                           </div>
                           <div className="mt-1 space-y-1 w-full">
