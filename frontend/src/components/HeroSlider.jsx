@@ -1,4 +1,4 @@
-﻿import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 const HeroSlider = () => {
@@ -303,7 +303,7 @@ const HeroSlider = () => {
                           <div className="flex-1">
                             <h3 className="font-bold text-white text-xs">Portfolio Site</h3>
                             <div className="flex items-baseline gap-1 mt-1">
-                              <span className="text-xl font-bold text-white">â‚¹2,599</span>
+                              <span className="text-xl font-bold text-white">₹9,999</span>
                             </div>
                             <div className="mt-2 space-y-1">
                               <div className="flex items-center gap-1 text-[10px] text-blue-100/80">
@@ -344,7 +344,7 @@ const HeroSlider = () => {
                           <div className="flex-1">
                             <h3 className="font-bold text-white text-xs">E-Commerce Site</h3>
                             <div className="flex items-baseline gap-1 mt-1">
-                              <span className="text-xl font-bold text-white">â‚¹6,999</span>
+                              <span className="text-xl font-bold text-white">₹19,999</span>
                             </div>
                             <div className="mt-2 space-y-1">
                               <div className="flex items-center gap-1 text-[10px] text-yellow-100/90">
@@ -391,7 +391,7 @@ const HeroSlider = () => {
                           <div>
                             <h3 className="font-bold text-white text-xs">Portfolio Site</h3>
                             <div className="flex items-baseline gap-1 mt-1">
-                              <span className="text-lg font-bold text-white">â‚¹2,599</span>
+                              <span className="text-lg font-bold text-white">₹9,999</span>
                             </div>
                           </div>
                           <div className="mt-1 space-y-1 w-full">
@@ -432,7 +432,7 @@ const HeroSlider = () => {
                           <div>
                             <h3 className="font-bold text-white text-xs">E-Commerce Site</h3>
                             <div className="flex items-baseline gap-1 mt-1">
-                              <span className="text-lg font-bold text-white">â‚¹6,999</span>
+                              <span className="text-lg font-bold text-white">₹19,999</span>
                             </div>
                           </div>
                           <div className="mt-1 space-y-1 w-full">
