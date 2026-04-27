@@ -46,95 +46,95 @@ const PricingBanner = () => {
           </div>
 
           {/* Right content - Pricing cards */}
-          <div className="grid grid-cols-2 gap-3 lg:gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Portfolio Site */}
-            <div className="relative bg-white/10 backdrop-blur-sm p-4 lg:p-5 rounded-2xl border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 group">
-              <div className="absolute -top-2 -right-2 px-2 py-0.5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full text-[10px] font-bold text-white shadow-lg">
-                POPULAR
+            <div className="relative bg-white/10 backdrop-blur-sm p-5 lg:p-6 rounded-2xl border border-white/20 hover:bg-white/15 hover:border-white/30 transition-all duration-300 group">
+              <div className="absolute -top-2 -right-2 px-3 py-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full text-[10px] font-bold text-white shadow-lg">
+                BEST FOR PROFESSIONALS
               </div>
 
-              <div className="space-y-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="space-y-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-white text-sm lg:text-base">Portfolio Site</h3>
-                  <p className="text-[10px] lg:text-xs text-blue-200/60">Personal / Business</p>
+                  <h3 className="font-bold text-white text-lg">Portfolio Website</h3>
+                  <p className="text-xs text-blue-200/60">Perfect for individuals & small businesses</p>
                 </div>
 
                 <div className="flex items-baseline gap-1">
-                  <span className="text-2xl lg:text-3xl font-bold text-white">₹2,599</span>
-                  <span className="text-xs text-blue-200/60">only</span>
+                  <span className="text-3xl lg:text-4xl font-bold text-white">₹9,999</span>
+                  <span className="text-xs text-blue-200/60 font-medium">all inclusive</span>
                 </div>
 
-                <div className="space-y-1.5 pt-1">
-                  <div className="flex items-center gap-2 text-xs text-blue-100/80">
-                    <svg className="w-3.5 h-3.5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Free Domain (1 Year)</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-blue-100/80">
-                    <svg className="w-3.5 h-3.5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Free Deployment</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-blue-100/80">
-                    <svg className="w-3.5 h-3.5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Mobile Responsive</span>
-                  </div>
+                <div className="grid grid-cols-1 gap-2 pt-2">
+                  {[
+                    '5 Dynamic Pages',
+                    'Free Domain (1 Year)',
+                    'Free Hosting (1 Year)',
+                    'Premium SSL Certificate',
+                    'Mobile Responsive Design',
+                    'SEO & Speed Optimized',
+                    'Contact Form Integration'
+                  ].map((feature, i) => (
+                    <div key={i} className="flex items-center gap-3 text-sm text-blue-100/80">
+                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
+                        <svg className="w-3.5 h-3.5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span>{feature}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
 
             {/* E-commerce Site */}
-            <div className="relative bg-gradient-to-br from-yellow-500/20 to-orange-500/20 backdrop-blur-sm p-4 lg:p-5 rounded-2xl border border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-300 group">
-              <div className="absolute -top-2 -right-2 px-2 py-0.5 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full text-[10px] font-bold text-gray-900 shadow-lg">
-                BEST VALUE
+            <div className="relative bg-gradient-to-br from-yellow-500/10 to-orange-500/10 backdrop-blur-sm p-5 lg:p-6 rounded-2xl border border-yellow-500/30 hover:border-yellow-500/50 transition-all duration-300 group">
+              <div className="absolute -top-2 -right-2 px-3 py-1 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full text-[10px] font-bold text-gray-900 shadow-lg">
+                MOST ADVANCED
               </div>
 
-              <div className="space-y-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                  <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="space-y-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-white text-sm lg:text-base">E-Commerce Site</h3>
-                  <p className="text-[10px] lg:text-xs text-yellow-200/70">Online Store</p>
+                  <h3 className="font-bold text-white text-lg">E-Commerce Store</h3>
+                  <p className="text-xs text-yellow-200/70">Full-featured online shop</p>
                 </div>
 
                 <div className="flex items-baseline gap-1">
-                  <span className="text-2xl lg:text-3xl font-bold text-white">₹6,999</span>
-                  <span className="text-xs text-yellow-200/60">only</span>
+                  <span className="text-3xl lg:text-4xl font-bold text-white">₹19,999</span>
+                  <span className="text-xs text-yellow-200/60 font-medium">all inclusive</span>
                 </div>
 
-                <div className="space-y-1.5 pt-1">
-                  <div className="flex items-center gap-2 text-xs text-yellow-100/90">
-                    <svg className="w-3.5 h-3.5 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Free Domain (1 Year)</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-yellow-100/90">
-                    <svg className="w-3.5 h-3.5 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Free Hosting (1 Year)</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-xs text-yellow-100/90">
-                    <svg className="w-3.5 h-3.5 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span>Payment Gateway</span>
-                  </div>
+                <div className="grid grid-cols-1 gap-2 pt-2">
+                  {[
+                    'Unlimited Products',
+                    'Free Domain & Hosting',
+                    'Payment Gateway Setup',
+                    'Inventory Management',
+                    'Order Tracking System',
+                    'Customer Login Panel',
+                    'Premium WhatsApp Support'
+                  ].map((feature, i) => (
+                    <div key={i} className="flex items-center gap-3 text-sm text-yellow-50/90">
+                      <div className="flex-shrink-0 w-5 h-5 rounded-full bg-yellow-500/20 flex items-center justify-center">
+                        <svg className="w-3.5 h-3.5 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span>{feature}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>

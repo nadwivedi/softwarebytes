@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PricingBanner from '../components/PricingBanner';
 
 const services = [
   {
@@ -103,34 +104,34 @@ const Services = () => {
                   {service.number}
                 </div>
 
-                <div className="relative p-5 md:p-7">
-                  <div className="flex items-center gap-3 md:gap-4 mb-4">
-                    <div className={`w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
+                <div className="relative p-4 md:p-6">
+                  <div className="flex items-center gap-3 md:gap-4 mb-3">
+                    <div className={`w-9 h-9 md:w-11 md:h-11 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300 flex-shrink-0`}>
                       {service.icon}
                     </div>
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 leading-tight">
+                    <h3 className="text-base md:text-lg font-bold text-gray-900 leading-tight">
                       {service.title}
                     </h3>
                   </div>
 
-                  <p className="text-gray-600 text-sm md:text-base mb-6 leading-relaxed">{service.description}</p>
+                  <p className="text-gray-600 text-xs md:text-sm mb-4 leading-relaxed">{service.description}</p>
 
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-2 md:gap-4 mt-3 md:mt-0">
+                  <ul className="grid grid-cols-2 gap-2 md:gap-3">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center gap-2 md:gap-3">
-                        <span className="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-green-100 flex items-center justify-center">
-                          <svg className="w-3 h-3 md:w-4 md:h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <li key={featureIndex} className="flex items-center gap-2">
+                        <span className="flex-shrink-0 w-4 h-4 md:w-5 md:h-5 rounded-full bg-green-100 flex items-center justify-center">
+                          <svg className="w-2.5 h-2.5 md:w-3 h-3 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
                         </span>
-                        <span className="text-gray-700 text-xs md:text-base">{feature}</span>
+                        <span className="text-gray-700 text-[10px] md:text-xs font-medium">{feature}</span>
                       </li>
                     ))}
                   </ul>
 
                   <Link
                     to="/contact"
-                    className="group/btn inline-flex items-center gap-2 mt-5 md:mt-8 px-4 py-2 rounded-xl bg-blue-50 text-blue-700 text-sm md:text-base font-semibold hover:bg-blue-100 hover:gap-3 transition-all duration-300"
+                    className="group/btn inline-flex items-center gap-2 mt-4 md:mt-6 px-4 py-2 rounded-xl bg-blue-50 text-blue-700 text-xs md:text-sm font-semibold hover:bg-blue-100 hover:gap-3 transition-all duration-300"
                   >
                     Get Started
                     <span className="font-mono">&lt;/&gt;</span>
@@ -141,6 +142,9 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      {/* Pricing Banner Section */}
+      <PricingBanner />
 
       {/* Process Section */}
       <section className="py-20 bg-white border-y border-slate-200/70">

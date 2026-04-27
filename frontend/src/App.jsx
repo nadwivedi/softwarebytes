@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Services from './pages/Service';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import Crusherbook from './pages/Crusherbook';
+import RtoSarthi from './pages/RtoSarthi';
 
 const seoByPath = {
   '/': {
@@ -27,6 +29,16 @@ const seoByPath = {
     title: 'Contact | Software Bytes',
     description:
       'Contact Software Bytes for ERP, software, website, and mobile app requirements. Talk to our team for a free consultation.',
+  },
+  '/crusherbook': {
+    title: 'Crusherbook | Crusher Plant Management Software',
+    description:
+      'Crusherbook is a specialized ERP system for stone crusher owners to manage production, sales, inventory, and GST compliance.',
+  },
+  '/rtosarthi': {
+    title: 'RTO Sarthi | Software for RTO Agents and Consultants',
+    description:
+      'RTO Sarthi simplifies application tracking, document management, and client accounting for RTO consultancy businesses.',
   },
 };
 
@@ -85,6 +97,8 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/crusherbook" element={<Crusherbook />} />
+            <Route path="/rtosarthi" element={<RtoSarthi />} />
           </Routes>
         </main>
         <Footer />

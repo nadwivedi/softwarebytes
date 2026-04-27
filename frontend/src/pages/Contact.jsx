@@ -83,10 +83,10 @@ const Contact = () => {
             <span className="font-mono">&lt;/&gt;</span>
             Contact Us
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          <h1 className="text-4xl lg:text-2xl xl:text-4xl font-bold text-slate-900 mb-4 transition-all duration-300">
             Let's Build Something Great
           </h1>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xs xl:text-base text-slate-600 max-w-2xl mx-auto transition-all duration-300">
             Reach out for a free consultation. We usually respond within one business day.
           </p>
         </div>
@@ -99,18 +99,18 @@ const Contact = () => {
                 className="group bg-white rounded-2xl border border-slate-100 p-6 shadow-sm hover:shadow-lg transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
-                  <div className={`w-12 h-12 ${info.color} rounded-xl flex items-center justify-center text-white group-hover:scale-105 transition-transform duration-300`}>
+                  <div className={`w-10 h-10 lg:w-8 lg:h-8 xl:w-12 xl:h-12 ${info.color} rounded-xl flex items-center justify-center text-white group-hover:scale-105 transition-all duration-300`}>
                     {info.icon}
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-1">{info.title}</h3>
+                    <h3 className="font-semibold text-slate-900 text-sm lg:text-xs xl:text-base mb-1">{info.title}</h3>
                     {Array.isArray(info.value) ? (
                       <div className="flex flex-col gap-1">
                         {info.value.map((phone) => (
                           <a
                             key={phone}
                             href={`tel:${phone.replace(/\s+/g, '')}`}
-                            className="text-slate-600 hover:text-blue-600 transition-colors duration-300"
+                            className="text-slate-600 hover:text-blue-600 text-sm lg:text-[10px] xl:text-sm transition-colors duration-300"
                           >
                             {phone}
                           </a>
@@ -119,12 +119,12 @@ const Contact = () => {
                     ) : info.title === 'Email Address' ? (
                       <a
                         href={`mailto:${info.value}`}
-                        className="text-slate-600 hover:text-blue-600 transition-colors duration-300 break-all"
+                        className="text-slate-600 hover:text-blue-600 text-sm lg:text-[10px] xl:text-sm transition-colors duration-300 break-all"
                       >
                         {info.value}
                       </a>
                     ) : (
-                      <p className="text-slate-600">{info.value}</p>
+                      <p className="text-slate-600 text-sm lg:text-[10px] xl:text-sm">{info.value}</p>
                     )}
                   </div>
                 </div>
@@ -138,7 +138,7 @@ const Contact = () => {
                   <a
                     key={index}
                     href="#"
-                    className={`w-11 h-11 ${social.color} rounded-xl flex items-center justify-center text-white transition-all duration-300 hover:scale-105`}
+                    className={`w-11 h-11 lg:w-8 lg:h-8 xl:w-11 xl:h-11 ${social.color} rounded-xl flex items-center justify-center text-white transition-all duration-300 hover:scale-105`}
                   >
                     <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                       <path d={social.icon}/>
@@ -152,10 +152,10 @@ const Contact = () => {
           <div className="lg:col-span-3">
             <div className="bg-white rounded-3xl border border-slate-100 p-8 md:p-10 shadow-xl shadow-slate-900/5">
               <div className="mb-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+                <h2 className="text-2xl lg:text-xl xl:text-3xl font-bold text-slate-900 mb-2">
                   Send us a Message
                 </h2>
-                <p className="text-slate-600">
+                <p className="text-slate-600 lg:text-xs xl:text-base">
                   Tell us about your project and we will get back to you shortly.
                 </p>
               </div>
@@ -176,7 +176,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-3">
+                    <label className="block text-sm lg:text-[10px] xl:text-sm font-semibold text-slate-700 mb-2 lg:mb-1 xl:mb-3">
                       Your Name
                     </label>
                     <div className="relative">
@@ -192,13 +192,13 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         placeholder="John Doe"
-                        className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
+                        className="w-full pl-12 pr-4 py-4 lg:py-2.5 xl:py-4 lg:text-xs xl:text-base bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-sm font-semibold text-slate-700 mb-3">
+                    <label className="block text-sm lg:text-[10px] xl:text-sm font-semibold text-slate-700 mb-2 lg:mb-1 xl:mb-3">
                       Your Email
                     </label>
                     <div className="relative">
@@ -214,14 +214,14 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         placeholder="john@example.com"
-                        className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
+                        className="w-full pl-12 pr-4 py-4 lg:py-2.5 xl:py-4 lg:text-xs xl:text-base bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
                       />
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-3">
+                  <label className="block text-sm lg:text-[10px] xl:text-sm font-semibold text-slate-700 mb-2 lg:mb-1 xl:mb-3">
                     Phone Number
                   </label>
                   <div className="relative">
@@ -236,13 +236,13 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="+91 62646 82508"
-                      className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
+                      className="w-full pl-12 pr-4 py-4 lg:py-2.5 xl:py-4 lg:text-xs xl:text-base bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-slate-700 mb-3">
+                  <label className="block text-sm lg:text-[10px] xl:text-sm font-semibold text-slate-700 mb-2 lg:mb-1 xl:mb-3">
                     Your Message
                   </label>
                   <div className="relative">
@@ -258,7 +258,7 @@ const Contact = () => {
                       required
                       rows="5"
                       placeholder="Tell us about your project..."
-                      className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300 resize-none"
+                      className="w-full pl-12 pr-4 py-4 lg:py-2.5 xl:py-4 lg:text-xs xl:text-base bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:border-transparent focus:bg-white transition-all duration-300 resize-none"
                     ></textarea>
                   </div>
                 </div>
@@ -266,7 +266,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`group w-full py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-2xl hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300 flex items-center justify-center gap-3 ${
+                  className={`group w-full py-4 lg:py-3 xl:py-5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold lg:text-sm xl:text-base rounded-2xl hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300 flex items-center justify-center gap-3 ${
                     isSubmitting ? 'opacity-75 cursor-not-allowed' : ''
                   }`}
                 >
@@ -293,7 +293,7 @@ const Contact = () => {
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
         <div className="bg-white rounded-3xl border border-slate-100 shadow-sm p-8 md:p-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">Visit Our Office</h2>
+          <h2 className="text-3xl lg:text-xl xl:text-4xl font-bold text-slate-900 mb-3 transition-all duration-300">Visit Our Office</h2>
           <p className="text-slate-600 mb-8">Raipur, Chhattisgarh, India</p>
           <div className="inline-flex items-center gap-3 px-6 py-3 rounded-2xl bg-slate-50 border border-slate-200 text-slate-700">
             <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
