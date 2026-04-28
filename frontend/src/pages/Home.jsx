@@ -47,7 +47,7 @@ const servicesPreview = [
 const stats = [
   { number: '500+', label: 'Projects Completed', icon: '01' },
   { number: '200+', label: 'Happy Clients', icon: '02' },
-  { number: '15+', label: 'Years Experience', icon: '03' },
+  { number: '5+', label: 'Years Experience', icon: '03' },
   { number: '24/7', label: 'Support Available', icon: '04' },
 ];
 

@@ -79,7 +79,7 @@ const HeroSlider = () => {
                         </div>
                         <div className="h-5 lg:h-8 w-px bg-gray-200"></div>
                         <div className="text-center">
-                          <div className="text-base lg:text-xl font-bold text-gray-900">15+</div>
+                          <div className="text-base lg:text-xl font-bold text-gray-900">5+</div>
                           <div className="text-[10px] lg:text-xs text-gray-500">Years</div>
                         </div>
                         <div className="h-5 lg:h-8 w-px bg-gray-200"></div>
@@ -268,7 +268,7 @@ const HeroSlider = () => {
                         </div>
                         <div className="h-6 lg:h-8 w-px bg-white/20"></div>
                         <div className="text-center">
-                          <div className="text-lg lg:text-xl font-bold text-white">15+</div>
+                          <div className="text-lg lg:text-xl font-bold text-white">5+</div>
                           <div className="text-[10px] lg:text-xs text-blue-200/60">Years</div>
                         </div>
                         <div className="h-6 lg:h-8 w-px bg-white/20 hidden sm:block"></div>
