@@ -31,9 +31,9 @@ const seoByPath = {
       'Contact Software Bytes for ERP, software, website, and mobile app requirements. Talk to our team for a free consultation.',
   },
   '/crusherbook': {
-    title: 'Crusherbook | Crusher Plant Management Software',
+    title: 'Crusherbook | Stone Crusher Plant ERP with AI Slip Entry & Weighbridge Integration',
     description:
-      'Crusherbook is a specialized ERP system for stone crusher owners to manage production, sales, inventory, and GST compliance.',
+      'Crusherbook is stone crusher ERP software with AI slip photo entry, weighbridge integration, WhatsApp alerts, party ledger, stock, expenses and daily profit reports.',
   },
   '/rtosarthi': {
     title: 'RTO Sarthi | Software for RTO Agents and Consultants',
