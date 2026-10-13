@@ -150,7 +150,7 @@ const coreFeatures = [
 const plans = [
   {
     name: 'Basic',
-    price: '₹3,999',
+    price: '₹6,999',
     description: 'For entry, records and ledger.',
     features: [
       'Crusher entry & records',
@@ -163,7 +163,7 @@ const plans = [
   },
   {
     name: 'Advanced',
-    price: '₹5,999',
+    price: '₹8,999',
     badge: 'Most Popular',
     popular: true,
     description: 'For AI auto entry and weighbridge entry.',
@@ -178,7 +178,7 @@ const plans = [
   },
   {
     name: 'Enterprise',
-    price: '₹7,999',
+    price: '₹10,999',
     badge: 'Best Value',
     description: 'For multi-plant control and priority support.',
     features: [
@@ -247,7 +247,7 @@ const faqs = [
 const heroStats = [
   { icon: 'star', value: 'Since 2021', label: 'Serving crusher plants', tint: 'border-blue-200 bg-blue-50', dot: 'bg-blue-600', text: 'text-blue-700' },
   { icon: 'star', value: '4.8 / 5', label: 'Rated by plant owners', tint: 'border-emerald-200 bg-emerald-50', dot: 'bg-emerald-600', text: 'text-emerald-700' },
-  { icon: 'wallet', value: '₹3,999', label: 'Plans from, per year', tint: 'border-amber-200 bg-amber-50', dot: 'bg-amber-500', text: 'text-amber-700' },
+  { icon: 'wallet', value: '₹6,999', label: 'Plans from, per year', tint: 'border-amber-200 bg-amber-50', dot: 'bg-amber-500', text: 'text-amber-700' },
   { icon: 'calendar', value: '14 days', label: 'Free trial, no card', tint: 'border-violet-200 bg-violet-50', dot: 'bg-violet-600', text: 'text-violet-700' },
 ];
 
