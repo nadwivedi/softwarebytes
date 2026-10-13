@@ -43,6 +43,16 @@ const Navbar = () => {
         </svg>
       )
     },
+    { 
+      path: '/gymsolution', 
+      label: 'GymSolution', 
+      description: 'Gym Management Software',
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 9v6M8 7v10M16 7v10M20 9v6M8 12h8" />
+        </svg>
+      )
+    },
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -77,7 +87,7 @@ const Navbar = () => {
             >
               <button
                 className={`flex items-center gap-1 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
-                  location.pathname.includes('crusherbook') || location.pathname.includes('rtosarthi')
+                  location.pathname.includes('crusherbook') || location.pathname.includes('rtosarthi') || location.pathname.includes('gymsolution')
                     ? 'text-slate-900 bg-slate-100'
                     : 'text-slate-700 hover:text-slate-900 hover:bg-slate-100'
                 }`}

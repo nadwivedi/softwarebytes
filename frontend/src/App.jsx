@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Crusherbook from './pages/Crusherbook';
 import RtoSarthi from './pages/RtoSarthi';
+import GymSolution from './pages/GymSolution';
 
 const seoByPath = {
   '/': {
@@ -39,6 +40,11 @@ const seoByPath = {
     title: 'RTO Sarthi | Software for RTO Agents and Consultants',
     description:
       'RTO Sarthi simplifies application tracking, document management, and client accounting for RTO consultancy businesses.',
+  },
+  '/gymsolution': {
+    title: 'GymSolution | Gym Management Software by Software Bytes',
+    description:
+      'GymSolution is gym management software to manage members, plans, fee collection, attendance and membership renewals.',
   },
 };
 
@@ -99,6 +105,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/crusherbook" element={<Crusherbook />} />
             <Route path="/rtosarthi" element={<RtoSarthi />} />
+            <Route path="/gymsolution" element={<GymSolution />} />
           </Routes>
         </main>
         <Footer />
