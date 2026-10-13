@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import PricingBanner from '../components/PricingBanner';
 
 const services = [
   {
@@ -144,7 +143,6 @@ const Services = () => {
       </section>
 
       {/* Pricing Banner Section */}
-      <PricingBanner />
 
       {/* Process Section */}
       <section className="py-20 bg-white border-y border-slate-200/70">
