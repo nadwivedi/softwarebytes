@@ -10,6 +10,10 @@ import Crusherbook from './pages/Crusherbook';
 import RtoSarthi from './pages/RtoSarthi';
 import GymSolution from './pages/GymSolution';
 import InsuranceSoftware from './pages/InsuranceSoftware';
+import InsuranceWhiteLabel from './pages/InsuranceWhiteLabel';
+import InsuranceSoftwareCost from './pages/InsuranceSoftwareCost';
+import GymWhiteLabel from './pages/GymWhiteLabel';
+import CustomInsuranceSoftware from './pages/CustomInsuranceSoftware';
 
 const seoByPath = {
   '/': {
@@ -51,6 +55,26 @@ const seoByPath = {
     title: 'Insurance Software Development Company | Software for Agents, Agencies & Brokers',
     description:
       'Software Bytes is an insurance software development company building CRM, policy management, renewal reminders, commission tracking and broker ERP for insurance agents, agencies and brokers.',
+  },
+  '/insurance-white-label-software': {
+    title: 'White Label Insurance Software | Launch Your Own Insurance Platform | Software Bytes',
+    description:
+      'Launch your own insurance software under your brand with Software Bytes white label insurance platform. Trusted by insurance brands like BimaMox and BimaOne.',
+  },
+  '/insurance-software-development-cost': {
+    title: 'Insurance Software Development Cost | Starts at ₹29,999 | Software Bytes Raipur',
+    description:
+      'Insurance software development cost starts at ₹29,999. Contact Software Bytes, an IT company based in Raipur, Chhattisgarh, for insurance CRM, policy and renewal software.',
+  },
+  '/white-label-gym-software': {
+    title: 'White Label Gym Software | Launch Your Own Gym Management Software | Software Bytes',
+    description:
+      'Launch gym management software under your own brand with Software Bytes white label gym software, built on GymSolution. Your logo, domain and mobile app.',
+  },
+  '/custom-insurance-software-development': {
+    title: 'Custom Insurance Software Development | Software Bytes Raipur',
+    description:
+      'Custom insurance software development for agencies, brokers and insurtech startups: CRM, policy admin, quote engines, commissions, claims, portals, apps and integrations. Starts at ₹29,999.',
   },
 };
 
@@ -113,6 +137,10 @@ function App() {
             <Route path="/rtosarthi" element={<RtoSarthi />} />
             <Route path="/gymsolution" element={<GymSolution />} />
             <Route path="/insurance-software-development" element={<InsuranceSoftware />} />
+            <Route path="/insurance-white-label-software" element={<InsuranceWhiteLabel />} />
+            <Route path="/insurance-software-development-cost" element={<InsuranceSoftwareCost />} />
+            <Route path="/white-label-gym-software" element={<GymWhiteLabel />} />
+            <Route path="/custom-insurance-software-development" element={<CustomInsuranceSoftware />} />
           </Routes>
         </main>
         <Footer />

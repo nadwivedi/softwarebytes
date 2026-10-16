@@ -87,7 +87,7 @@ const faqs = [
   },
   {
     q: 'How much does insurance software development cost?',
-    a: 'Cost depends on the modules, number of users and integrations you need. Share your requirement on WhatsApp or through the contact page and we will give you a clear quote.',
+    a: 'Insurance software development with Software Bytes starts at ₹29,999. The final cost depends on the modules, number of users and integrations you need. Share your requirement on WhatsApp or through the contact page and we will give you a clear quote.',
   },
   {
     q: 'Can I see a demo before starting?',
@@ -296,6 +296,24 @@ const InsuranceSoftware = () => {
               Many insurance software development companies sell large, complex systems. Software Bytes builds practical software
               for Indian insurance agents, agencies and brokers: easy for staff to learn, fast on mobile, and focused on renewals,
               commissions and customer service.
+            </p>
+            <p className="mt-3 text-slate-600">
+              Want to launch under your own brand?{' '}
+              <Link to="/insurance-white-label-software" className="font-semibold text-blue-600 hover:underline">
+                See our white label insurance software
+              </Link>
+              , used by brands like BimaMox and BimaOne.
+            </p>
+            <p className="mt-3 text-slate-600">
+              Pricing starts at ₹29,999.{' '}
+              <Link to="/insurance-software-development-cost" className="font-semibold text-blue-600 hover:underline">
+                See insurance software development cost
+              </Link>
+              {' '}or explore{' '}
+              <Link to="/custom-insurance-software-development" className="font-semibold text-blue-600 hover:underline">
+                custom insurance software development
+              </Link>
+              .
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               {technologies.map((tech) => (

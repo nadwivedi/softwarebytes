@@ -14,6 +14,10 @@ const Footer = () => {
     { path: '/services', label: 'Software Development' },
     { path: '/services', label: 'ERP Solutions' },
     { path: '/insurance-software-development', label: 'Insurance Software Development' },
+    { path: '/custom-insurance-software-development', label: 'Custom Insurance Software' },
+    { path: '/insurance-white-label-software', label: 'White Label Insurance Software' },
+    { path: '/insurance-software-development-cost', label: 'Insurance Software Cost' },
+    { path: '/white-label-gym-software', label: 'White Label Gym Software' },
     { path: '/services', label: 'Web Development' },
     { path: '/services', label: 'Mobile Apps' },
   ];
