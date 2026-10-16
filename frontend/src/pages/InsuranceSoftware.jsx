@@ -313,6 +313,10 @@ const InsuranceSoftware = () => {
               <Link to="/custom-insurance-software-development" className="font-semibold text-blue-600 hover:underline">
                 custom insurance software development
               </Link>
+              . हिंदी में पढ़ें:{' '}
+              <Link to="/insurance-ke-liye-software-kaise-banwaye" className="font-semibold text-blue-600 hover:underline">
+                Insurance के लिए software कैसे बनवाएं
+              </Link>
               .
             </p>
             <div className="mt-6 flex flex-wrap gap-2">

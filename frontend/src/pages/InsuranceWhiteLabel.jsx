@@ -327,6 +327,10 @@ const InsuranceWhiteLabel = () => {
               <Link to="/insurance-software-development" className="font-semibold text-blue-600 hover:underline">
                 See our insurance software development services
               </Link>
+              {' '}or read about our{' '}
+              <Link to="/white-label-insurance-platform-india" className="font-semibold text-blue-600 hover:underline">
+                white label insurance platform for India
+              </Link>
               .
             </p>
           </div>

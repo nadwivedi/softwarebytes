@@ -14,6 +14,8 @@ import InsuranceWhiteLabel from './pages/InsuranceWhiteLabel';
 import InsuranceSoftwareCost from './pages/InsuranceSoftwareCost';
 import GymWhiteLabel from './pages/GymWhiteLabel';
 import CustomInsuranceSoftware from './pages/CustomInsuranceSoftware';
+import InsurancePlatformIndia from './pages/InsurancePlatformIndia';
+import InsuranceSoftwareHindi from './pages/InsuranceSoftwareHindi';
 
 const seoByPath = {
   '/': {
@@ -75,6 +77,16 @@ const seoByPath = {
     title: 'Custom Insurance Software Development | Software Bytes Raipur',
     description:
       'Custom insurance software development for agencies, brokers and insurtech startups: CRM, policy admin, quote engines, commissions, claims, portals, apps and integrations. Starts at ₹29,999.',
+  },
+  '/white-label-insurance-platform-india': {
+    title: 'White Label Insurance Platform India | For Brokers, POSP Networks & IMFs | Software Bytes',
+    description:
+      'Launch your insurance brand in India with Software Bytes white label insurance platform for POSPs, brokers, IMFs and insurtech startups. Used by BimaMox and BimaOne.',
+  },
+  '/insurance-ke-liye-software-kaise-banwaye': {
+    title: 'Insurance के लिए Software कैसे बनवाएं? | Insurance ke liye software kaise banwaye | Software Bytes',
+    description:
+      'Insurance के लिए software कैसे बनवाएं: 6 आसान स्टेप, ज़रूरी features और खर्च। Software Bytes, रायपुर छत्तीसगढ़ से insurance software ₹29,999 से शुरू।',
   },
 };
 
@@ -141,6 +153,8 @@ function App() {
             <Route path="/insurance-software-development-cost" element={<InsuranceSoftwareCost />} />
             <Route path="/white-label-gym-software" element={<GymWhiteLabel />} />
             <Route path="/custom-insurance-software-development" element={<CustomInsuranceSoftware />} />
+            <Route path="/white-label-insurance-platform-india" element={<InsurancePlatformIndia />} />
+            <Route path="/insurance-ke-liye-software-kaise-banwaye" element={<InsuranceSoftwareHindi />} />
           </Routes>
         </main>
         <Footer />
