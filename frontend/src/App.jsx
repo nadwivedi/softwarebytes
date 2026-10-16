@@ -9,6 +9,7 @@ import About from './pages/About';
 import Crusherbook from './pages/Crusherbook';
 import RtoSarthi from './pages/RtoSarthi';
 import GymSolution from './pages/GymSolution';
+import InsuranceSoftware from './pages/InsuranceSoftware';
 
 const seoByPath = {
   '/': {
@@ -45,6 +46,11 @@ const seoByPath = {
     title: 'GymSolution | Gym Management Software by Software Bytes',
     description:
       'GymSolution is gym management software to manage members, plans, fee collection, attendance and membership renewals.',
+  },
+  '/insurance-software-development': {
+    title: 'Insurance Software Development Company | Software for Agents, Agencies & Brokers',
+    description:
+      'Software Bytes is an insurance software development company building CRM, policy management, renewal reminders, commission tracking and broker ERP for insurance agents, agencies and brokers.',
   },
 };
 
@@ -106,6 +112,7 @@ function App() {
             <Route path="/crusherbook" element={<Crusherbook />} />
             <Route path="/rtosarthi" element={<RtoSarthi />} />
             <Route path="/gymsolution" element={<GymSolution />} />
+            <Route path="/insurance-software-development" element={<InsuranceSoftware />} />
           </Routes>
         </main>
         <Footer />

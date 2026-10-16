@@ -11,10 +11,11 @@ const Footer = () => {
   ];
 
   const services = [
-    'Software Development',
-    'ERP Solutions',
-    'Web Development',
-    'Mobile Apps',
+    { path: '/services', label: 'Software Development' },
+    { path: '/services', label: 'ERP Solutions' },
+    { path: '/insurance-software-development', label: 'Insurance Software Development' },
+    { path: '/services', label: 'Web Development' },
+    { path: '/services', label: 'Mobile Apps' },
   ];
 
   return (
@@ -91,11 +92,11 @@ const Footer = () => {
               {services.map((service, index) => (
                 <li key={index}>
                   <Link
-                    to="/services"
+                    to={service.path}
                     className="group flex items-center text-gray-400 hover:text-white transition-colors duration-300"
                   >
                     <span className="text-blue-500 mr-2 group-hover:translate-x-1 transition-transform duration-300">&lt;/&gt;</span>
-                    {service}
+                    {service.label}
                   </Link>
                 </li>
               ))}
